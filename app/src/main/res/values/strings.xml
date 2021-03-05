@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">NilvaBTChallenge</string>
+    <string name="app_name">BTChat</string>
+    <string name="str_menu_search_devices">Search Devices</string>
+    <string name="str_menu_bluetooth_on">Switch on Bluetooth</string>
+    <string name="discoverable">Make discoverable</string>
+
 </resources>
