@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+    <variable
+        name="data"
+        type="com.nikmaram.bluetoothchat.model.Message" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/message_bubble_min_height"
+        android:layoutDirection="ltr"
+        android:layout_marginStart="@dimen/chat_bubble_left_margin"
+        android:layout_marginEnd="@dimen/chat_bubble_right_margin"
+        android:layout_marginTop="@dimen/chat_bubble_top_margin">
+
+        <TextView
+            android:id="@+id/sentMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_chat_sent_background"
+            android:padding="@dimen/chat_message_padding"
+            app:layout_constrainedWidth="true"
+            tools:text="@string/test_message"
+            android:text="@{data.message}"
+            android:textColor="@color/colorPrimaryText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/timeStamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="@dimen/chat_message_padding"
+            android:paddingEnd="@dimen/chat_message_padding"
+            tools:text="@string/test_stamp"
+            setTime="@{data.time}"
+            android:textColor="@color/grey_time"
+            android:textSize="15sp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="@+id/sentMessage"
+            app:layout_constraintTop_toBottomOf="@+id/sentMessage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
