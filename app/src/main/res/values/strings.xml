@@ -17,5 +17,6 @@
     <string name="scanning">Scanning for devices...</string>
     <string name="select_device">select a device to connect</string>
     <string name="none_found">No devices found</string>
+    <string name="splash_text">WellCome to NilVa Bluetooth Chat Application</string>
 
 </resources>
