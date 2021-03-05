@@ -9,12 +9,12 @@ Step5:To start the chat, we first need to establish connection with the desired 
 Step6:To connect two devices, we must implement server side and client side mechanism. One device shall open the server socket and another should initiate the connection. Both are connected when BluetoothSocket is connected on the same RFCOMM channel. <br />
 During connection procedure android framework automatically shows pairing dialog. <br />
 <br />
-![alt text](https://github.com/hoseinnikmaram/Android-PeerMessanger/blob/master/screenshot/photo_1.jpg)
+![alt text](https://github.com/hoseinnikmaram/Android-PeerMessanger/blob/develop/screenshot/photo_1.jpg)
 <br />
 Step 7: Read and Write Data
 <br />
     After establishing connection successfully, each device has connected BluetoothSocket. <br />
     Now one can Read and write data to the streams using read(byte[]) and write(byte[]).
 <br />
-![alt text](https://github.com/hoseinnikmaram/Android-PeerMessanger/blob/master/screenshot/photo_2.jpg)
+![alt text](https://github.com/hoseinnikmaram/Android-PeerMessanger/blob/develop/screenshot/photo_2.jpg)
 <br />
